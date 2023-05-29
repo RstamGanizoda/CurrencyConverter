@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3F5AD2F22A25260600E3B037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AD2F12A25260600E3B037 /* AppDelegate.swift */; };
-		3F5AD2F62A25260600E3B037 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AD2F52A25260600E3B037 /* ViewController.swift */; };
+		3F5AD2F62A25260600E3B037 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AD2F52A25260600E3B037 /* mainViewController.swift */; };
 		3F5AD2F92A25260600E3B037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AD2F72A25260600E3B037 /* Main.storyboard */; };
 		3F5AD2FB2A25260C00E3B037 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AD2FA2A25260C00E3B037 /* Assets.xcassets */; };
 		3F5AD2FE2A25260C00E3B037 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AD2FC2A25260C00E3B037 /* LaunchScreen.storyboard */; };
+		3F5AD3072A253DB000E3B037 /* mainViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AD3062A253DB000E3B037 /* mainViewControllerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F5AD2EE2A25260600E3B037 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5AD2F12A25260600E3B037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F5AD2F52A25260600E3B037 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F5AD2F52A25260600E3B037 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		3F5AD2F82A25260600E3B037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F5AD2FA2A25260C00E3B037 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F5AD2FD2A25260C00E3B037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F5AD2FF2A25260C00E3B037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5AD3062A253DB000E3B037 /* mainViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewControllerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		3F5AD2F02A25260600E3B037 /* Currency Converter */ = {
 			isa = PBXGroup;
 			children = (
+				3F5AD3052A253D8D00E3B037 /* Controllers */,
 				3F5AD2F12A25260600E3B037 /* AppDelegate.swift */,
-				3F5AD2F52A25260600E3B037 /* ViewController.swift */,
 				3F5AD2F72A25260600E3B037 /* Main.storyboard */,
 				3F5AD2FA2A25260C00E3B037 /* Assets.xcassets */,
 				3F5AD2FC2A25260C00E3B037 /* LaunchScreen.storyboard */,
 				3F5AD2FF2A25260C00E3B037 /* Info.plist */,
 			);
 			path = "Currency Converter";
+			sourceTree = "<group>";
+		};
+		3F5AD3052A253D8D00E3B037 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3F5AD3062A253DB000E3B037 /* mainViewControllerViewModel.swift */,
+				3F5AD2F52A25260600E3B037 /* mainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F5AD2F62A25260600E3B037 /* ViewController.swift in Sources */,
+				3F5AD3072A253DB000E3B037 /* mainViewControllerViewModel.swift in Sources */,
+				3F5AD2F62A25260600E3B037 /* mainViewController.swift in Sources */,
 				3F5AD2F22A25260600E3B037 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

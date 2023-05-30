@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F29C0022A2633EE005F1407 /* Extension + UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F29C0012A2633EE005F1407 /* Extension + UIView.swift */; };
 		3F5AD2F22A25260600E3B037 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AD2F12A25260600E3B037 /* AppDelegate.swift */; };
 		3F5AD2F62A25260600E3B037 /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5AD2F52A25260600E3B037 /* mainViewController.swift */; };
 		3F5AD2F92A25260600E3B037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5AD2F72A25260600E3B037 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F29C0012A2633EE005F1407 /* Extension + UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIView.swift"; sourceTree = "<group>"; };
 		3F5AD2EE2A25260600E3B037 /* Currency Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Currency Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5AD2F12A25260600E3B037 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F5AD2F52A25260600E3B037 /* mainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F29C0032A263564005F1407 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F29C0012A2633EE005F1407 /* Extension + UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		3F5AD2E52A25260600E3B037 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		3F5AD2F02A25260600E3B037 /* Currency Converter */ = {
 			isa = PBXGroup;
 			children = (
+				3F29C0032A263564005F1407 /* Extensions */,
 				3F5AD3052A253D8D00E3B037 /* Controllers */,
 				3F5AD2F12A25260600E3B037 /* AppDelegate.swift */,
 				3F5AD2F72A25260600E3B037 /* Main.storyboard */,
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F29C0022A2633EE005F1407 /* Extension + UIView.swift in Sources */,
 				3F5AD3072A253DB000E3B037 /* mainViewControllerViewModel.swift in Sources */,
 				3F5AD2F62A25260600E3B037 /* mainViewController.swift in Sources */,
 				3F5AD2F22A25260600E3B037 /* AppDelegate.swift in Sources */,

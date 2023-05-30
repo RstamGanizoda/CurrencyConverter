@@ -105,11 +105,25 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="Gi0-Cq-XEn">
+                                        <rect key="frame" x="143" y="125.00000000000003" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="W9N-d5-T9s"/>
+                                            <constraint firstAttribute="height" constant="50" id="qIC-ev-gOq"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="sync"/>
+                                        <connections>
+                                            <action selector="syncButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ied-u9-Sjo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="iU2-dr-Bh2" firstAttribute="centerY" secondItem="ee9-nN-ajC" secondAttribute="centerY" id="HwF-8b-ub2"/>
+                                    <constraint firstItem="Gi0-Cq-XEn" firstAttribute="centerY" secondItem="ee9-nN-ajC" secondAttribute="centerY" id="LFJ-fm-qGb"/>
                                     <constraint firstAttribute="height" constant="300" id="Okl-ch-lYh"/>
+                                    <constraint firstItem="Gi0-Cq-XEn" firstAttribute="centerX" secondItem="ee9-nN-ajC" secondAttribute="centerX" id="SN3-QK-6QM"/>
                                     <constraint firstAttribute="trailing" secondItem="iU2-dr-Bh2" secondAttribute="trailing" constant="20" id="rLb-Yu-k3B"/>
                                     <constraint firstItem="iU2-dr-Bh2" firstAttribute="leading" secondItem="ee9-nN-ajC" secondAttribute="leading" constant="20" id="rMM-EX-Zzr"/>
                                 </constraints>
@@ -156,13 +170,19 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="6jC-8m-tcc"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="firstCurrencyFlagImageView" destination="GxL-b8-ARI" id="eSg-tb-I98"/>
+                        <outlet property="secondCurrencyFlagImageView" destination="g90-8u-hWd" id="tRp-Iu-hlZ"/>
+                        <outlet property="syncButton" destination="Gi0-Cq-XEn" id="Mxe-jL-9UE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="105" y="-35"/>
+            <point key="canvasLocation" x="104.8" y="-35.467980295566505"/>
         </scene>
     </scenes>
     <resources>
+        <image name="sync" width="50" height="50"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

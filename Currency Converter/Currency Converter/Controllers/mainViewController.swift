@@ -40,6 +40,7 @@ class mainViewController: UIViewController {
         modifyConverterView()
         modifyCurrencyFlag()
         modifyAmountTextFields()
+        addTapRecognizer()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -81,8 +82,20 @@ class mainViewController: UIViewController {
         amountTextField.attributedPlaceholder = placeholderComment
         amountTextField.textFieldsSettings()
         amountTextField.textFieldParameters()
+        amountTextField.keyboardType = .decimalPad
         convertedAmountTextField.textFieldsSettings()
         convertedAmountTextField.textFieldParameters()
+        convertedAmountTextField.isUserInteractionEnabled = false
+    }
+    
+    private func addTapRecognizer(){
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapDetected(_:)))
+        recognizer.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(recognizer)
+    }
+    
+    @objc func tapDetected(_ recognizer: UITapGestureRecognizer) {
+        self.amountTextField.resignFirstResponder()
     }
 }
 
